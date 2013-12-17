@@ -1,0 +1,171 @@
+/* VARS */
+
+@import url("reset.css");
+
+	$colorL               : rgb(252,252,252);
+	$colorBlueL           : rgb(30,175,243);
+	$colorBlueD           : rgb(20,140,210);
+	$colorBlueLink		  : rgb(222,244,255);
+
+@mixin brRadius($ra){
+	-webkit-border-radius : $ra;
+	-moz-border-radius    : $ra;
+	-ms-border-radius     : $ra;
+	-o-border-radius      : $ra;
+	border-radius         : $ra;
+}
+
+@mixin graDi(){
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e4eaee));
+	background:-webkit-linear-gradient(#ffffff, #e4eaee);
+	background:-moz-linear-gradient(#ffffff, #e4eaee);
+	background:-o-linear-gradient(#ffffff, #e4eaee);
+	background:linear-gradient(#ffffff, #e4eaee);
+}
+
+@mixin graDi2(){
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#FFFFFF));
+	background:-webkit-linear-gradient(#ffffff, #FFFFFF);
+	background:-moz-linear-gradient(#ffffff, #FFFFFF);
+	background:-o-linear-gradient(#ffffff, #FFFFFF);
+	background:linear-gradient(#ffffff, #FFFFFF);
+}
+
+@mixin padd($arb, $aba, $der, $izq){
+	padding-top           : $arb;
+	padding-bottom        : $aba;
+	padding-right         : $der;
+	padding-left          : $izq;
+} 
+
+body {
+	background-color      : #FFF;
+	margin                : 0px;
+	padding               : 0px;
+	font-family           : 'Source Sans Pro', sans-serif;
+	font-weight           : 300;
+}
+
+
+p{
+	font-size             : 1em;
+}
+
+
+
+/* TOP CONTAINER SETTING */
+
+.containerTop{
+	width: 95%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* TOP NAV SETTING */
+
+.nav-top{
+	background-color      : $colorBlueL;
+	height                : 300px;
+	margin-top            : 0px;
+	width                 : 100%;
+}
+
+/* LOGO */
+
+#logo{
+	background: url('logo.jpg');
+	float: left;
+	height: 64px;
+	display: block;
+	text-decoration   : none;
+	width: 100px;
+}
+
+/* NAV LIST MENU */
+.nav-list{
+	float: right;
+	li{
+		float: left;
+		a{
+			display: block;
+			padding: 0px 10px;
+			text-decoration: none;
+			color: $colorBlueLink;
+			font-size: 1.1em;
+		}
+	}
+
+}
+
+.nav-menu{
+	display: none;
+}
+
+
+
+/* MediaQueries */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+
+@-ms-viewport { width:device-width;}
+@viewport { width:device-width;}
+
+
+/* PHONES */
+@media screen and (max-width: 767px) {
+	.nav-menu{
+		float: right;
+		color: $colorBlueLink;
+		display: block;
+		padding: 0 10px;
+		cursor: pointer;
+	}
+
+	.nav-list{
+		float: left;
+		height: 0px;
+		overflow: hidden;
+		width: 100%;
+
+		li{
+			padding: 10px 0;
+			width:100%;
+		}
+	}
+	.nav-open{
+		height: auto;
+	}
+}
+
+
+
+
+
+
+
+/* OLD CODE */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+
+.btBox{
+	background-color      : #FFF;
+	@include brRadius(3px);
+	padding               : 0.5em 3em;
+	color                 : $colorBlueD;
+	font-size             : 1.2em;
+	@include graDi();
+	text-decoration   : none;
+	&:hover{
+		background-color: #ccc;
+		@include graDi2();
+	}
+}

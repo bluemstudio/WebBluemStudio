@@ -1,0 +1,113 @@
+@import url("reset.css");
+/* VARS */
+body {
+  background-color: #FFF;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300; }
+
+p {
+  font-size: 1em; }
+
+/* TOP CONTAINER SETTING */
+.containerTop {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px; }
+
+/* TOP NAV SETTING */
+.nav-top {
+  background-color: #1eaff3;
+  height: 300px;
+  margin-top: 0px;
+  width: 100%; }
+
+/* LOGO */
+#logo {
+  background: url("logo.jpg");
+  float: left;
+  height: 64px;
+  display: block;
+  text-decoration: none;
+  width: 100px; }
+
+/* NAV LIST MENU */
+.nav-list {
+  float: right; }
+  .nav-list li {
+    float: left; }
+    .nav-list li a {
+      display: block;
+      padding: 0px 10px;
+      text-decoration: none;
+      color: #def4ff;
+      font-size: 1.1em; }
+
+.nav-menu {
+  display: none; }
+
+/* MediaQueries */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+@-ms-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
+/* PHONES */
+@media screen and (max-width: 767px) {
+  .nav-menu {
+    float: right;
+    color: #def4ff;
+    display: block;
+    padding: 0 10px;
+    cursor: pointer; }
+
+  .nav-list {
+    float: left;
+    height: 0px;
+    overflow: hidden;
+    width: 100%; }
+    .nav-list li {
+      padding: 10px 0;
+      width: 100%; }
+
+  .nav-open {
+    height: auto; } }
+/* OLD CODE */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+.btBox {
+  background-color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0.5em 3em;
+  color: #148cd2;
+  font-size: 1.2em;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e4eaee));
+  background: -webkit-linear-gradient(white, #e4eaee);
+  background: -moz-linear-gradient(white, #e4eaee);
+  background: -o-linear-gradient(white, #e4eaee);
+  background: linear-gradient(white, #e4eaee);
+  text-decoration: none; }
+  .btBox:hover {
+    background-color: #ccc;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(white));
+    background: -webkit-linear-gradient(white, white);
+    background: -moz-linear-gradient(white, white);
+    background: -o-linear-gradient(white, white);
+    background: linear-gradient(white, white); }
